@@ -10,6 +10,7 @@ import { UserService } from '../user.service';
 export class UserListComponent implements OnInit {
 
   users: User[] = [];// create property (empty array)
+  searchCriteria: string = "";
 
   constructor(
     private usrsrv: UserService  //Inject User service
