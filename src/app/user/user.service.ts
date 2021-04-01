@@ -14,6 +14,10 @@ export class UserService {
     private http : HttpClient   //injecting
   ) { }
 
+  login(username: string, password: string): Observable<User> { //create user login/GET
+    return this.http.get(`${this.baseurl}/${username}/${password}`)as Observable<User>;
+  }
+
   list():Observable<User[]>{ //Observable is class name(must be capitalized)
     return this.http.get(`${this.baseurl}`) as Observable<User[]>; //GET all
   }

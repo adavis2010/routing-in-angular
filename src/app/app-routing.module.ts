@@ -7,6 +7,7 @@ import { UserCreateComponent } from './user/user-create/user-create.component';
 import { UserDetailComponent } from './user/user-detail/user-detail.component';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { UserListComponent } from './user/user-list/user-list.component';
+import { UserLoginComponent } from './user/user-login/user-login.component';
 
 const routes: Routes = [
   { path:'', redirectTo:'/home', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path :'users/detail/:id', component: UserDetailComponent}, // : means variable
   { path :'users/create', component: UserCreateComponent},
   { path :'users/edit/:id', component: UserEditComponent},
+  { path :'login', component: UserLoginComponent},
   { path: '**', component: HomeComponent }
 ];
 
