@@ -13,6 +13,9 @@ import { MenuComponent } from './menu/menu.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { BoolDisplayPipe } from './bool-display.pipe';
 import { SearchUserPipe } from './search-user.pipe';
+import { UserDetailComponent } from './user/user-detail/user-detail.component';
+import { UserCreateComponent } from './user/user-create/user-create.component';
+import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { SearchUserPipe } from './search-user.pipe';
     MenuComponent,
     UserListComponent,
     BoolDisplayPipe,
-    SearchUserPipe
+    SearchUserPipe,
+    UserDetailComponent,
+    UserCreateComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
